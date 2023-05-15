@@ -45,7 +45,7 @@ def get_cpu_info_line_list() -> (list, bool):
 
         if sub_res > 10:
             for _ in range(sub_res // 5):
-                res_data.append(-1)
+                res_data.append(0)
 
         res_data.append(data[i].value)
 
@@ -58,7 +58,7 @@ def get_cpu_info_middle_list() -> (list, bool):
 
     cur_index = 0
     while cur_index < len(data):
-        if data[cur_index] == -1:
+        if data[cur_index] == 0:
             cur_index += 1
             continue
 
@@ -72,7 +72,7 @@ def get_cpu_info_middle_list() -> (list, bool):
                 err_calc = True
                 break
 
-            if data[cur_index] == -1:
+            if data[cur_index] == 0:
                 cur_index += 1
                 err_calc = True
                 break
