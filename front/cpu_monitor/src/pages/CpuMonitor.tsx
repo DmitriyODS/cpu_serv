@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './CpuMonitor.module.css';
 import { Button } from '@mui/material';
-import { Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 import { GetCpuInfoLine, GetCpuInfoMiddle } from '../api/cpuMonitor';
 
 type TState = {
